@@ -40,8 +40,25 @@ public class CalcApiController implements CalcApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<String>(objectMapper.readValue("\"\"", String.class), HttpStatus.NOT_IMPLEMENTED);
-            } catch (IOException e) {
+                Double numA = Double.parseDouble(a);
+                Double numb = Double.parseDouble(b);
+
+                String result = "Invalid number or calculation";
+
+                if ("add".equalsIgnoreCase(mathCalc)) {
+                    result = String.valueOf(numA + numb);
+                } else if ("sub".equalsIgnoreCase(mathCalc)) {
+                    result = String.valueOf(numA - numb);
+                } else if ("mul".equalsIgnoreCase(mathCalc)) {
+                    result = String.valueOf(numA * numb);
+                } else if ("div".equalsIgnoreCase(mathCalc)) {
+                    result = String.valueOf(numA / numb);
+                } else if ("mod".equalsIgnoreCase(mathCalc)) {
+                    result = String.valueOf(numA.longValue() % numb.longValue());
+                }
+
+                return new ResponseEntity<String>(result, HttpStatus.OK);
+            } catch (Exception e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
             }
