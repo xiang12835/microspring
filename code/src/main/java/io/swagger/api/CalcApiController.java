@@ -36,35 +36,35 @@ public class CalcApiController implements CalcApi {
         this.request = request;
     }
 
-    public ResponseEntity<String> calcGet(@NotNull @ApiParam(value = "", required = true) @Valid @RequestParam(value = "a", required = true) String a,@NotNull @ApiParam(value = "", required = true) @Valid @RequestParam(value = "b", required = true) String b,@NotNull @ApiParam(value = "entity type", required = true) @Valid @RequestParam(value = "mathCalc", required = true) String mathCalc) {
+    public ResponseEntity<String> calcGet(@NotNull @ApiParam(value = "", required = true) @Valid @RequestParam(value = "a", required = true) String a, @NotNull @ApiParam(value = "", required = true) @Valid @RequestParam(value = "b", required = true) String b, @NotNull @ApiParam(value = "entity type", required = true) @Valid @RequestParam(value = "mathCalc", required = true) String mathCalc) {
         String accept = request.getHeader("Accept");
-        if (accept != null && accept.contains("application/json")) {
-            try {
-                Double numA = Double.parseDouble(a);
-                Double numb = Double.parseDouble(b);
+        try {
 
-                String result = "Invalid number or calculation";
+            Double numA = Double.parseDouble(a);
+            Double numb = Double.parseDouble(b);
 
-                if ("add".equalsIgnoreCase(mathCalc)) {
-                    result = String.valueOf(numA + numb);
-                } else if ("sub".equalsIgnoreCase(mathCalc)) {
-                    result = String.valueOf(numA - numb);
-                } else if ("mul".equalsIgnoreCase(mathCalc)) {
-                    result = String.valueOf(numA * numb);
-                } else if ("div".equalsIgnoreCase(mathCalc)) {
-                    result = String.valueOf(numA / numb);
-                } else if ("mod".equalsIgnoreCase(mathCalc)) {
-                    result = String.valueOf(numA.longValue() % numb.longValue());
-                }
+            String result = "Invalid number or calculation";
 
-                return new ResponseEntity<String>(result, HttpStatus.OK);
-            } catch (Exception e) {
-                log.error("Couldn't serialize response for content type application/json", e);
-                return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
+            if ("add".equalsIgnoreCase(mathCalc)) {
+                result = String.valueOf(numA + numb);
+            } else if ("sub".equalsIgnoreCase(mathCalc)) {
+                result = String.valueOf(numA - numb);
+            } else if ("mul".equalsIgnoreCase(mathCalc)) {
+                result = String.valueOf(numA * numb);
+            } else if ("div".equalsIgnoreCase(mathCalc)) {
+                result = String.valueOf(numA / numb);
+            } else if ("mod".equalsIgnoreCase(mathCalc)) {
+                result = String.valueOf(numA.longValue() % numb.longValue());
             }
+
+            return new ResponseEntity<String>(result, HttpStatus.OK);
+
+        } catch (Exception e) {
+            log.error("Couldn't serialize response for content type application/json", e);
+            return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
-        return new ResponseEntity<String>(HttpStatus.NOT_IMPLEMENTED);
+
     }
 
 }
