@@ -38,7 +38,7 @@
         <!--第三方依赖版本-->
         <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
         <spring-boot.version>2.3.3.RELEASE</spring-boot.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <apollo-client.version>1.7.0</apollo-client.version>
         <bucket4j.version>4.0.0</bucket4j.version>
         <guava.version>18.0</guava.version>
