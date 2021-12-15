@@ -17,6 +17,7 @@
         <module>office</module>
         <module>gateway</module>
         <module>registry</module>
+        <module>scheduler</module>
     </modules>
 
     <properties>
