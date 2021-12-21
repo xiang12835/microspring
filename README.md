@@ -36,6 +36,10 @@ https://blog.csdn.net/Xiaodongge521/article/details/102857461
 
 IDP: Identity Provider
 
+>proxy
+
+调用第三方
+
 ## 功能
 
 >服务通信 (进行中)
@@ -47,7 +51,6 @@ IDP: Identity Provider
 
 - Spring Cloud Gateway
 - [SpringCloud gateway （史上最全）](https://www.cnblogs.com/crazymakercircle/p/11704077.html)
-
 
 >服务治理
 
