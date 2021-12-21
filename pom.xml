@@ -18,6 +18,7 @@
         <module>gateway</module>
         <module>registry</module>
         <module>scheduler</module>
+        <module>identity</module>
     </modules>
 
     <properties>
