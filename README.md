@@ -1,6 +1,6 @@
 # Spring Cloud
 
-## Build Setup
+## 启动
 
 - 打开pom.xml
 - 运行数据库
@@ -13,32 +13,41 @@
 
 公共
 
+- common-swagger（进行中）
+
+[springboot项目集成swagger-bootstrap-ui详细版](https://blog.csdn.net/Xiaodongge521/article/details/102857461)
+
 >office
 
 - 智能办公、知识库
-- springboot项目集成swagger-bootstrap-ui详细版 （进行中）
-
-https://blog.csdn.net/Xiaodongge521/article/details/102857461
-
->gateway
-
-网关工程
 
 >registry
 
 服务注册与发现
 
+>proxy (进行中)
+
+调用第三方
+
+>gateway
+
+网关工程
+
 >scheduler
 
 定时任务
 
->identity
+>identity (进行中)
 
 IDP: Identity Provider
 
->proxy
+>monitor (进行中)
 
-调用第三方
+微服务监控
+
+- log
+- trace
+- metrics
 
 ## 功能
 
@@ -50,7 +59,8 @@ IDP: Identity Provider
 >服务网关
 
 - Spring Cloud Gateway
-- [SpringCloud gateway （史上最全）](https://www.cnblogs.com/crazymakercircle/p/11704077.html)
+
+[SpringCloud gateway （史上最全）](https://www.cnblogs.com/crazymakercircle/p/11704077.html)
 
 >服务治理
 
@@ -69,8 +79,12 @@ IDP: Identity Provider
 
 - [Spring Boot(九)：定时任务](http://www.ityouknow.com/springboot/2016/12/02/spring-boot-scheduler.html)
 
-> IDP (进行中)
+>IDP
 
 主要负责 Oauth 2.0 授权协议的处理，还有 Oauth 2.0 和 JWT 令牌颁发以及管理，使用 Login Svc 来进行用户认证，技术选型 Spring Security OAuth （可以企业定制）和 KeyCloak （开箱即用 + OIDC） 
 
+>服务监控
 
+- ELK
+- SkyWalking
+- Prometheus
