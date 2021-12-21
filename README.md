@@ -79,7 +79,9 @@ IDP: Identity Provider
 
 - [Spring Boot(九)：定时任务](http://www.ityouknow.com/springboot/2016/12/02/spring-boot-scheduler.html)
 
->IDP
+>服务安全
+
+IDP: Identity Provider
 
 主要负责 Oauth 2.0 授权协议的处理，还有 Oauth 2.0 和 JWT 令牌颁发以及管理，使用 Login Svc 来进行用户认证，技术选型 Spring Security OAuth （可以企业定制）和 KeyCloak （开箱即用 + OIDC） 
 
