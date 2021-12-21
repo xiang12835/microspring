@@ -1,4 +1,4 @@
-package scheduler.task;
+package online.flyingfish.scheduler.task;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
