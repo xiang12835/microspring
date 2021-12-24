@@ -90,3 +90,4 @@ IDP: Identity Provider
 - ELK
 - SkyWalking
 - Prometheus
+- Spring Boot actuator 健康监控 
