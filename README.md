@@ -49,6 +49,24 @@ IDP: Identity Provider
 - trace
 - metrics
 
+>admin
+
+Spring Boot Admin
+
+目前所有的端点信息都是通过 HTTP 访问的，数据也是 Json 格式的，如果直接通过这些数据来查看某些指标不是很直观，这时我们可以通过 Spring Boot Admin 来对 actuator 信息进行管理。
+
+Spring Boot Admin 是一个开源的 Web 项目，用于管理和监控 Spring Boot 应用程序的运行状态。在 Spring Boot 项目中可以通过集成 Spring Boot Admin Client 向 Spring Boot Admin Server 进行注册，这样我们就可以在Spring Boot Admin Server 统一管理 Spring Boot 应用。
+
+Spring Boot Admin 主要功能点：
+
+- 显示应用程序的监控状态
+- 应用程序上下线监控  
+- 查看 JVM 和线程信息
+- 可视化的查看日志及下载日志文件
+- 动态切换日志级别
+- HTTP 请求信息跟踪等实用功能
+- 将 actuator 提供的数据进行可视化
+
 ## 功能
 
 >服务通信 (进行中)
