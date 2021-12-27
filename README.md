@@ -96,6 +96,9 @@ Spring Boot Admin 主要功能点：
 
 ？：Unable to connect to Command Metric Stream.
 
+Proxy opening connection to: http://localhost:9090/hystrix.stream
+
+
 - 隔离
 - 限流：GateWay + Redis（分布式），Guava（单机）
 - 降级

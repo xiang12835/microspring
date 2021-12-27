@@ -1,5 +1,6 @@
 package online.flyingfish.office.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -51,6 +52,7 @@ public class BokController {
 
     @ApiOperation("书本信息列表页")
     @RequestMapping(value ="/book_lst", method = RequestMethod.GET)
+//    @HystrixCommand(fallbackMethod = "fallback")
     public List<Book> lstBook() {
         return bookService.lstBook();
     }
