@@ -49,7 +49,7 @@ IDP: Identity Provider
 - trace
 - metrics
 
->admin
+>admin (进行中)
 
 Spring Boot Admin
 
