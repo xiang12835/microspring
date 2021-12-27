@@ -20,6 +20,7 @@
         <module>scheduler</module>
         <module>identity</module>
         <module>proxy</module>
+        <module>admin</module>
     </modules>
 
     <properties>
