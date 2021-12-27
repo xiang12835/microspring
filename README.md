@@ -91,7 +91,7 @@ Spring Boot Admin 主要功能点：
 
 通过 Hystrix Dashboard 来进行图形化的展示，能够更直观的看出系统当前的运行状态。
 
-1. 访问http://localhost:9070/hystrix 断路器web监控页面。
+1. 访问 http://localhost:9070/hystrix 断路器web监控页面。
 2. 添加地址 http://localhost:9070/hystrix.stream，确定监控 。可监控本机9070端口的断路器数据。
 
 - 隔离
