@@ -94,6 +94,8 @@ Spring Boot Admin 主要功能点：
 1. 访问 `http://localhost:9090/hystrix` 断路器 web 监控页面。
 2. 添加地址 `http://localhost:9090/hystrix.stream`，确定监控。可监控本机 9090 端口的断路器数据。
 
+？：Unable to connect to Command Metric Stream.
+
 - 隔离
 - 限流：GateWay + Redis（分布式），Guava（单机）
 - 降级
