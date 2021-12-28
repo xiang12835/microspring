@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.*;
 
 @Configuration
 @AutoConfigureAfter(DispatcherServletAutoConfiguration.class)
-public class WebConfiguration extends WebMvcConfigurationSupport {
+public class WebConfig extends WebMvcConfigurationSupport {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
