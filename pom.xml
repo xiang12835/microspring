@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>online.flyingfish.jiayou</groupId>
-    <artifactId>spring-cloud</artifactId>
+    <artifactId>spring-yun</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>spring-cloud</name>
+    <name>spring-yun</name>
     <description>jiayou project for Spring Boot</description>
     <url>https://jiayou.flyingfish.online</url>
  
