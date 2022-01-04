@@ -1,0 +1,85 @@
+version: '1.0'
+
+services:
+  admin-service:
+    build: ./admin
+    image: springyun/admin
+    environment:
+#      - SPRING_PROFILES_ACTIVE
+      - SERVER_PORT
+    networks:
+      - internal_access
+
+  identity-service:
+    build: ./identity
+    image: springyun/identity
+    environment:
+#      - SPRING_PROFILES_ACTIVE
+      - SERVER_PORT
+    networks:
+      - internal_access
+
+  office-service:
+    build: ./office
+    image: springyun/office
+    environment:
+#      - SPRING_PROFILES_ACTIVE
+      - SERVER_PORT
+      - OFFICE_DATASOURCE_URL
+      - OFFICE_DATASOURCE_USERNAME
+      - OFFICE_DATASOURCE_PASSWORD
+    networks:
+      - internal_access
+      - external_access # db access
+
+  proxy-service:
+    build: ./proxy
+    image: springyun/proxy
+    environment:
+#      - SPRING_PROFILES_ACTIVE
+      - SERVER_PORT
+    networks:
+      - internal_access
+#      - external_access # aliyun access
+
+  registry-service:
+    build: ./registry
+    image: springyun/registry
+    environment:
+#      - SPRING_PROFILES_ACTIVE
+      - SERVER_PORT
+    networks:
+      - internal_access
+
+  scheduler-service:
+    build: ./scheduler
+    image: springyun/scheduler
+    environment:
+#      - SPRING_PROFILES_ACTIVE
+      - SERVER_PORT
+    networks:
+      - internal_access
+
+  gateway-service:
+    build: ./gateway
+    image: springyun/gateway
+    ports:
+      - 80:80
+    environment:
+#      - SPRING_PROFILES_ACTIVE
+      - SERVER_PORT
+    depends_on:
+      - admin-service
+      - identity-service
+      - office-service
+      - proxy-service
+      - registry-service
+      - scheduler-service
+    networks:
+      - internal_access
+      - external_access
+
+networks:
+  internal_access:
+    internal: true
+  external_access:
