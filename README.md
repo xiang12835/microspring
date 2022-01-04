@@ -120,3 +120,26 @@ IDP: Identity Provider
 - SkyWalking
 - Prometheus
 - Spring Boot actuator 健康监控 
+
+>服务部署
+
+- 添加
+
+1. Dockerfile
+2. .env
+3. docker-compose.yml
+
+- 镜像构建
+
+1. mvn clean package -DskipTests
+2. docker-compose build
+3. docker images
+
+- 部署
+
+1. docker-compose up
+2. docker-compose ps
+
+- 清理
+
+1. docker-compose down
