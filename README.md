@@ -17,6 +17,8 @@
 
 [springboot项目集成swagger-bootstrap-ui详细版](https://blog.csdn.net/Xiaodongge521/article/details/102857461)
 
+[SpringDoc](https://juejin.cn/post/7080328458206707720)
+
 >office
 
 - 智能办公、知识库
