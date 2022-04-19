@@ -57,7 +57,7 @@ Spring Boot Admin
 
 目前所有的端点信息都是通过 HTTP 访问的，数据也是 Json 格式的，如果直接通过这些数据来查看某些指标不是很直观，这时我们可以通过 Spring Boot Admin 来对 actuator 信息进行管理。
 
-Spring Boot Admin 是一个开源的 Web 项目，用于管理和监控 Spring Boot 应用程序的运行状态。在 Spring Boot 项目中可以通过集成 Spring Boot Admin Client 向 Spring Boot Admin Server 进行注册，这样我们就可以在Spring Boot Admin Server 统一管理 Spring Boot 应用。
+Spring Boot Admin 是一个开源的 Web 项目，用于管理和监控 Spring Boot 应用程序的运行状态。在 Spring Boot 项目中可以通过集成 Spring Boot Admin Client 向 Spring Boot Admin Server 进行注册，这样我们就可以在Spring Boot Admin Server 统一管理 Spring Boot 应用。
 
 Spring Boot Admin 主要功能点：
 
@@ -121,7 +121,7 @@ IDP: Identity Provider
 - ELK
 - SkyWalking
 - Prometheus
-- Spring Boot actuator 健康监控 
+- Spring Boot admin 应用程序监控
 
 >服务部署
 
@@ -145,3 +145,59 @@ IDP: Identity Provider
 - 清理
 
 1. docker-compose down
+
+
+## 最佳实践
+
+> Spring Cloud
+
+- 服务框架：Spring Boot
+- 授权认证中心：OAuth2
+- 服务注册和发现：Eureka
+- 服务访问：Feign（RESTful 通信；代理）
+- 负载均衡：Ribbon（实现服务间稳定通信；拦截器）
+- 异步网关：Gateway
+- 配置中心：Apollo
+- 隔离：Hystrix
+- 熔断：Hystrix
+- 降级：Hystrix
+- 限流：GateWay + Redis（分布式），Guava（单机）
+- 日志监控：ELK
+- 链路追踪：SkyWalking
+- 指标监控：Prometheus
+- 错误告警：Sentry
+- 健康检查：ZMon
+- 数据库：MySQL
+- NoSQL数据库：MongoDB
+- 缓存：Redis
+- 消息队列：Kafka
+- 文件存储：阿里云存储 OSS
+- 搜索引擎：ElasticSearch
+
+
+> Spring Cloud Alibaba
+
+https://spring.io/projects/spring-cloud-alibaba
+
+https://github.com/alibaba/spring-cloud-alibaba
+
+- 服务框架：Spring Boot
+- 服务注册和发现：Nacos Discovery
+- 服务访问：Feign（RESTful 通信；代理）
+- 负载均衡：Ribbon（实现服务间稳定通信；拦截器）
+- 异步网关：Gateway
+- 分布式配置：Nacos Config
+- 降级 Sentinel：原理try-catch，在catch中调用fallback
+- 熔断 Sentinel：如果调用接口时出错达到配置的阈值，那么就不进行网络调用，而是直接调用本地的fallback
+- 限流 Sentinel：页面配置 QPS
+- 分布式事务：Seata
+- 日志监控：ELK
+- 链路追踪：SkyWalking
+- 指标监控：Prometheus
+- 数据库：MySQL
+- NoSQL数据库：MongoDB
+- 缓存：Redis
+- 消息队列：Kafka
+- 文件存储：阿里云存储 OSS
+- 搜索引擎：ElasticSearch
+
