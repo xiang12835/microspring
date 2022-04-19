@@ -5,7 +5,7 @@
 
     <parent>
         <groupId>online.flyingfish.jiayou</groupId>
-        <artifactId>spring-yun</artifactId>
+        <artifactId>microspring</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
