@@ -46,7 +46,7 @@
         <bucket4j.version>4.0.0</bucket4j.version>
         <guava.version>18.0</guava.version>
         <lombok.version>1.16.20</lombok.version>
-        <mysql-connector.version>8.0.27</mysql-connector.version>
+        <mysql-connector.version>8.0.28</mysql-connector.version>
         <mybatis-plus.version>3.4.0</mybatis-plus.version>
         <swagger2.version>2.9.2</swagger2.version>
         <swagger-ui.version>2.9.2</swagger-ui.version>
