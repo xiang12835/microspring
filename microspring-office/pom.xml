@@ -6,6 +6,7 @@
 	<modules>
 		<module>microspring-office-biz</module>
 		<module>microspring-office-h5</module>
+		<module>microspring-office-web</module>
 	</modules>
 
 	<parent>

@@ -13,10 +13,10 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @EnableEurekaClient
 @MapperScan("online.flyingfish.office.dao")
 @SpringBootApplication
-public class OfficeApplication {
+public class OfficeBizApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OfficeApplication.class, args);
+		SpringApplication.run(OfficeBizApplication.class, args);
 	}
 }
 
