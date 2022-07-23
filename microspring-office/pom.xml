@@ -5,6 +5,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>microspring-office-biz</module>
+		<module>microspring-office-h5</module>
 	</modules>
 
 	<parent>
