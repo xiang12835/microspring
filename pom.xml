@@ -13,14 +13,14 @@
     <url>https://jiayou.flyingfish.online</url>
  
     <modules>
-        <module>common</module>
-        <module>office</module>
-        <module>gateway</module>
-        <module>registry</module>
-        <module>scheduler</module>
-        <module>identity</module>
-        <module>proxy</module>
-        <module>admin</module>
+        <module>microspring-common</module>
+        <module>microspring-office</module>
+        <module>microspring-gateway</module>
+        <module>microspring-registry</module>
+        <module>microspring-scheduler</module>
+        <module>microspring-identity</module>
+        <module>microspring-proxy</module>
+        <module>microspring-admin</module>
     </modules>
 
     <properties>
