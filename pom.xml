@@ -150,6 +150,13 @@
                 <version>${fastjson.version}</version>
             </dependency>
 
+            <!--内部模块-->
+            <dependency>
+                <groupId>online.flyingfish.jiayou</groupId>
+                <artifactId>microspring-office-biz-book-api</artifactId>
+                <version>${backend.office.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
