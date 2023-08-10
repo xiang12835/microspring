@@ -1,13 +1,13 @@
-# MicroSpring
+## MicroSpring
 
-## 启动
+### 启动
 
 - 打开pom.xml
 - 运行数据库
 - 运行 ApiApplication
 - 浏览器打开 http://localhost:9000/swagger-ui.html
 
-## 介绍
+### 介绍
 
 >common
 
@@ -69,7 +69,7 @@ Spring Boot Admin 主要功能点：
 - HTTP 请求信息跟踪等实用功能
 - 将 actuator 提供的数据进行可视化
 
-## 功能
+### 功能
 
 >服务通信 (进行中)
 
@@ -147,7 +147,7 @@ IDP: Identity Provider
 1. docker-compose down
 
 
-## 最佳实践
+### 最佳实践
 
 > Spring Cloud
 
@@ -200,4 +200,3 @@ https://github.com/alibaba/spring-cloud-alibaba
 - 消息队列：Kafka
 - 文件存储：阿里云存储 OSS
 - 搜索引擎：ElasticSearch
-
