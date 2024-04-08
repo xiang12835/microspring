@@ -4,14 +4,14 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>online.flyingfish.jiayou</groupId>
+    <groupId>online.flyingfish.fx</groupId>
     <artifactId>microspring</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>microspring</name>
-    <description>jiayou project for Spring Boot</description>
-    <url>https://jiayou.flyingfish.online</url>
- 
+    <description>framework project for Spring Boot</description>
+    <url>https://fx.flyingfish.online</url>
+
     <modules>
         <module>microspring-common</module>
         <module>microspring-office</module>
@@ -50,9 +50,13 @@
         <mybatis-plus.version>3.4.0</mybatis-plus.version>
         <swagger2.version>2.9.2</swagger2.version>
         <swagger-ui.version>2.9.2</swagger-ui.version>
+        <knife4j.version>2.0.4</knife4j.version>
+        <swagger-annotations.version>1.5.20</swagger-annotations.version>
         <pagehelper.boot.version>1.2.5</pagehelper.boot.version>
         <fastjson.version>1.2.60</fastjson.version>
         <easyexcel.version>2.2.6</easyexcel.version>
+        <hutool.version>5.5.7</hutool.version>
+        <jasypt-spring-boot-starter.version>1.16</jasypt-spring-boot-starter.version>
 
 
         <commons.fileupload.version>1.3.3</commons.fileupload.version>
@@ -110,6 +114,12 @@
                 <version>${mybatis-plus.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-core</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
             <!--添加swagger依赖 -->
             <dependency>
                 <groupId>io.springfox</groupId>
@@ -120,6 +130,16 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${swagger-ui.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger-annotations.version}</version>
             </dependency>
 
             <!-- pagehelper 分页插件 -->
@@ -150,11 +170,28 @@
                 <version>${fastjson.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${jasypt-spring-boot-starter.version}</version>
+            </dependency>
+
             <!--内部模块-->
             <dependency>
-                <groupId>online.flyingfish.jiayou</groupId>
+                <groupId>online.flyingfish.fx</groupId>
                 <artifactId>microspring-office-biz-book-api</artifactId>
                 <version>${backend.office.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>online.flyingfish.fx</groupId>
+                <artifactId>microspring-common-swagger</artifactId>
+                <version>${backend.common.version}</version>
             </dependency>
 
         </dependencies>
