@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>microspring-biz</artifactId>
-	<name>microspring-office</name>
+	<name>microspring-biz</name>
 	<description>Backend Office for Spring Cloud</description>
 
 	<modules>
