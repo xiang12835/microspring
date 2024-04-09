@@ -14,7 +14,7 @@
 
     <modules>
         <module>microspring-common</module>
-        <module>microspring-office</module>
+        <module>microspring-biz</module>
         <module>microspring-gateway</module>
         <module>microspring-registry</module>
         <module>microspring-scheduler</module>
@@ -185,13 +185,13 @@
             <!--内部模块-->
             <dependency>
                 <groupId>online.flyingfish.fx</groupId>
-                <artifactId>microspring-office-biz-book-api</artifactId>
+                <artifactId>microspring-biz-office-app</artifactId>
                 <version>${backend.office.version}</version>
             </dependency>
             <dependency>
                 <groupId>online.flyingfish.fx</groupId>
-                <artifactId>microspring-common-swagger</artifactId>
-                <version>${backend.common.version}</version>
+                <artifactId>microspring-biz-office-client</artifactId>
+                <version>${backend.office.version}</version>
             </dependency>
 
         </dependencies>

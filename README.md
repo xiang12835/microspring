@@ -5,7 +5,7 @@
 - 打开pom.xml
 - 运行数据库
 - 运行 ApiApplication
-- 浏览器打开 http://localhost:9000/swagger-ui.html
+- 浏览器打开 http://localhost:9090/swagger-ui.html
 
 ### 介绍
 
