@@ -55,7 +55,7 @@
         <pagehelper.boot.version>1.2.5</pagehelper.boot.version>
         <fastjson.version>1.2.60</fastjson.version>
         <easyexcel.version>2.2.6</easyexcel.version>
-        <hutool.version>5.5.7</hutool.version>
+        <hutool.version>5.8.21</hutool.version>
         <jasypt-spring-boot-starter.version>1.16</jasypt-spring-boot-starter.version>
 
 
